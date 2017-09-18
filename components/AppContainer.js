@@ -4,20 +4,12 @@ import {connect} from 'react-redux'
 import {testNow} from '../wit/actionCreators/actionCreators.js'
 import LeadForm from './LeadForm'
 import LeadLists from './LeadLists'
+import { TabNavigator } from 'react-navigation';
 
-class AppContainer extends React.Component {
-	componentDidMount() {
-		this.props.onMount('Bonjour')
-	}
-	render() {
-		return(
-			<View style={styles.container}>
-			  {/*<LeadForm style={styles.form}	/>*/}
-			  <LeadLists style={styles.form}	/>
-			</View>
-		)
-	}
-}
+const AppContainer = TabNavigator({
+  List: {screen: LeadLists},
+  Form: {screen: LeadForm},
+});
 
 const styles = StyleSheet.create({
   container: {

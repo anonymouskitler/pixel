@@ -41,7 +41,7 @@ const mapDispatchToProps = (dispatch) => {
 
 const mapStateToProps = (state) => {
     return {
-        leads: state.leads
+        leads: state.data.leads
     }
 }
 
