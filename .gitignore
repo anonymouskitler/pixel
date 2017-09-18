@@ -1,2 +1,5 @@
+.expo
+db*.json
+db.json
 node_modules/
 
