@@ -1,7 +1,7 @@
 import React from 'react'
 import {View, Text} from 'react-native'
 import {connect} from 'react-redux'
-import {fetchLeads} from '../actionCreators/actionCreators'
+import {fetchLeads} from '../wit/actionCreators/actionCreators'
 import { List, ListItem } from 'react-native-elements'
 
 
@@ -23,7 +23,7 @@ class LeadLists extends React.Component {
               <ListItem
                 key={i}
                 title={lead.name}
-                subtitle={lead.phone_number}
+                subtitle={lead.phone}
               />
             ))
           }

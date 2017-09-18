@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native';
 import {connect} from 'react-redux'
-import {testNow} from '../actionCreators/actionCreators.js'
+import {testNow} from '../wit/actionCreators/actionCreators.js'
 import LeadForm from './LeadForm'
 import LeadLists from './LeadLists'
 
